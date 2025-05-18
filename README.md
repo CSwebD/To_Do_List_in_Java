@@ -1,6 +1,6 @@
 # ToDoList
 
-![To-Do List Screenshot](To_Do_List_screenshot.png)
+<img src="To_Do_List_screenshot.png" alt="To-Do List Screenshot" width="600"/>
 
 ## Description
 
@@ -38,6 +38,24 @@ The project has the following structure:
     └── Task.java           # Model class for a task
 ```
 
+ToDoList/
+├── module-info.java       # Module descriptor
+├── src/
+│   └── main/
+│       └── java/
+│           └── com/example/todolist/
+│               ├── AppFrame.java
+│               ├── Footer.java
+│               ├── List.java
+│               ├── Task.java
+│               ├── TitleBar.java
+│               └── ToDoList.java
+├── resources/
+│   └── To\_Do\_List\_screenshot.png  # Application screenshot
+└── README.md             # This file
+
+````
+
 ## Installation & Running
 
 1. **Clone the repository**
@@ -74,7 +92,7 @@ The project has the following structure:
 
 ## Screenshots
 
-![To-Do List Screenshot](To_Do_List_screenshot.png)
+<img src="To_Do_List_screenshot.png" alt="To-Do List Screenshot" width="600"/>
 
 ## Contributing
 
