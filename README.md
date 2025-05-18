@@ -1,7 +1,5 @@
 # ToDoList
 
-<img src="To_Do_List_screenshot.png" alt="To-Do List Screenshot" width="600"/>
-
 ## Description
 
 ToDoList is a simple Java Swing-based application that allows users to manage their daily tasks through an intuitive, lightweight interface. It demonstrates modular programming in Java, clean code architecture, and event-driven GUI design.
@@ -37,24 +35,6 @@ The project has the following structure:
     ├── List.java           # Panel displaying the list of tasks
     └── Task.java           # Model class for a task
 ```
-
-ToDoList/
-├── module-info.java       # Module descriptor
-├── src/
-│   └── main/
-│       └── java/
-│           └── com/example/todolist/
-│               ├── AppFrame.java
-│               ├── Footer.java
-│               ├── List.java
-│               ├── Task.java
-│               ├── TitleBar.java
-│               └── ToDoList.java
-├── resources/
-│   └── To\_Do\_List\_screenshot.png  # Application screenshot
-└── README.md             # This file
-
-````
 
 ## Installation & Running
 
