@@ -21,25 +21,30 @@ ToDoList is a simple Java Swing-based application that allows users to manage th
 
 ## Project Structure
 
+The project has the following structure:
+
 ```
-classes/
-├── module-info.java        # Module declaration
-├── ToDoList.java           # Main launcher class
-├── AppFrame.java           # Main frame containing GUI components
-├── TitleBar.java           # Custom title bar component
-├── Footer.java             # Footer panel with status/info
-├── List.java               # Panel displaying the list of tasks
-└── Task.java               # Model class for a task
+.
+├── README.md
+├── LICENSE
+├── To_Do_List_screenshot.png
+├── module-info.java        # Module descriptor for Java module
+└── classes/
+    ├── ToDoList.java       # Main launcher class
+    ├── AppFrame.java       # Main frame containing GUI components
+    ├── TitleBar.java       # Custom title bar component
+    ├── Footer.java         # Footer panel with status/info
+    ├── List.java           # Panel displaying the list of tasks
+    └── Task.java           # Model class for a task
 ```
 
 ## Installation & Running
 
 1. **Clone the repository**
-
    ```bash
    git clone https://github.com/yourusername/ToDoList.git
    cd ToDoList
-   ```
+````
 
 2. **Build the project**
 
