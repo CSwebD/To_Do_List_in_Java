@@ -38,13 +38,13 @@ The project has the following structure:
 
 ## Installation & Running
 
-1. **Clone the repository**
+1. Clone the repository
    ```bash
    git clone https://github.com/yourusername/ToDoList.git
-   cd ToDoList
-````
+   cd TooList
+   ````
 
-2. **Build the project**
+2. Build the project
 
    ```bash
    mvn clean package
@@ -56,7 +56,7 @@ The project has the following structure:
    javac -d out --module-source-path src $(find src -name "*.java")
    ```
 
-3. **Run the application**
+3. Run the application
 
    ```bash
    java --module-path out -m ToDoList/com.example.todolist.ToDoList
