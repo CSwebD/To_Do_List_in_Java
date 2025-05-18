@@ -1,25 +1,23 @@
 # ToDoList
 
-A simple modular Java application to manage a to-do list with a graphical user interface (GUI). This project demonstrates the use of the Java Platform Module System alongside Swing components for building desktop applications.
+![To-Do List Screenshot](To_Do_List_screenshot.png)
 
-## Module System
+## Description
 
-* **Module Name:** `ToDoList`
-* Declared in `module-info.java`:
-
-  ```java
-  module ToDoList {
-      requires java.desktop;
-  }
-  ```
-
-  * Depends on the `java.desktop` module for Swing GUI components.
+ToDoList is a simple Java Swing-based application that allows users to manage their daily tasks through an intuitive, lightweight interface. It demonstrates modular programming in Java, clean code architecture, and event-driven GUI design.
 
 ## Features
 
-* Create, view, and delete tasks.
-* Visual representation of tasks in a list.
-* Simple and intuitive GUI with a title bar, footer, and task panel.
+* Add, edit, and delete tasks
+* Mark tasks as complete/incomplete
+* Persistent storage of tasks between sessions
+* Responsive, resizable window layout
+* Modular code organization using Java 9+ modules
+
+## Prerequisites
+
+* Java Development Kit (JDK) 11 or higher
+* Maven or your preferred Java build tool
 
 ## Project Structure
 
@@ -34,45 +32,49 @@ classes/
 └── Task.java               # Model class for a task
 ```
 
-## Requirements
+## Installation & Running
 
-* Java Development Kit (JDK) 9 or higher
-* No external libraries required (relies solely on standard Java modules)
-
-## Build Instructions
-
-1. **Compile** the source files:
+1. **Clone the repository**
 
    ```bash
-   javac --module-source-path src -d out \
-         $(find src -name "*.java")
+   git clone https://github.com/yourusername/ToDoList.git
+   cd ToDoList
    ```
-2. **Run** the application:
+
+2. **Build the project**
 
    ```bash
-   java --module-path out -m ToDoList/ToDoList
+   mvn clean package
    ```
 
-> **Tip:** You can use an IDE (e.g., IntelliJ IDEA or Eclipse) that supports Java modules to import the project and run directly.
+   *Or* compile manually:
+
+   ```bash
+   javac -d out --module-source-path src $(find src -name "*.java")
+   ```
+
+3. **Run the application**
+
+   ```bash
+   java --module-path out -m ToDoList/com.example.todolist.ToDoList
+   ```
 
 ## Usage
 
-1. Launch the application.
-2. Use the input field to enter a task description.
-3. Click **Add** to append the new task to the list.
-4. Select a task and click **Delete** to remove it.
-5. View application status in the footer.
+* Click the **+** button or press **Enter** in the input field to add a new task.
+* Double-click a task to edit its description.
+* Click the checkbox next to a task to mark it complete or incomplete.
+* Click the **✖** button on a task to delete it.
+* Use the **File** menu to export or import task lists (future enhancement).
+
+## Screenshots
+
+![To-Do List Screenshot](To_Do_List_screenshot.png)
 
 ## Contributing
 
-Contributions are welcome! Feel free to fork the repository and submit pull requests:
-
-1. Fork the project.
-2. Create a feature branch: `git checkout -b feature/MyFeature`.
-3. Commit your changes: `git commit -m "Add MyFeature"`.
-4. Push to the branch: `git push origin feature/MyFeature`.
-5. Open a pull request.
+Contributions are welcome! Please open issues for bugs or feature requests, and submit pull requests for improvements.
 
 ## License
 
-This project is licensed under the MIT License. See the [LICENSE](/LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
